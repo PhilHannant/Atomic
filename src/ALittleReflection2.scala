@@ -13,9 +13,14 @@ trait Name {
 
 case class caseClass(name:String) extends Name
 
+class classNotCase(name:String) extends Name
+
+
 object printer extends App {
   val cc = caseClass("tester")
+  val c = new classNotCase("classTest")
   println(cc)
+  println(c)
 }
 
 
