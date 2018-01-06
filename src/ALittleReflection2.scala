@@ -11,11 +11,11 @@ trait Name {
 }
 
 
-case class caseClass(name:String)
+case class caseClass(name:String) extends Name
 
 object printer extends App {
-  println("hello")
-  println(caseClass)
+  val cc = caseClass("tester")
+  println(cc)
 }
 
 
